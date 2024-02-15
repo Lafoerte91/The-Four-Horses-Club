@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Merriweather';
+  src: local('Merriweather'),
+      url('../fonts/Merriweather-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Golos Text';
+  src: local('Golos Text'),
+      url('../fonts/GolosText-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+.container {
+
+}
+
+.header {
+  min-height: 700px;
+  background: url(../img/header-bg.png) center / cover no-repeat;
+  padding: 26px 0 132px 72px;
+}
+
+.header__logo {
+  width: 245px;
+  height: 36px;
+  margin-bottom: 62px;
+}
+
+.header__title {
+  max-width: 542px;
+  color: rgb(49, 49, 49);
+  font-size: 60px;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.header__capital {
+  margin-left: 91px;
+}
+
+.header__ball {
+  margin-left: 33px;
+}
+
+.header__text {
+  max-width: 542px;
+  text-align: center;
+  font-family: 'Golos Text', sans-serif;
+  color: rgb(49, 49, 49);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+
+
