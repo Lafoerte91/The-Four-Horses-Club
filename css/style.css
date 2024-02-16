@@ -14,6 +14,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Golos Text';
+  src: local('Golos Text'),
+      url('../fonts/GolosText-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
 body {
   font-family: 'Merriweather', serif;
 }
@@ -38,6 +46,7 @@ body {
   max-width: 542px;
   color: rgb(49, 49, 49);
   font-size: 60px;
+  font-weight: 400;
   line-height: 110%;
   text-transform: uppercase;
   margin-bottom: 24px;
@@ -61,5 +70,104 @@ body {
   line-height: 130%;
   margin-bottom: 40px;
 }
+
+.buttons {
+  display: flex;
+}
+
+.header__btn {
+  display: inline-block;
+  width: 263px;
+  height: 72px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 66px;
+  background: rgb(31, 31, 31);
+  color: rgb(255, 255, 255);
+  font-family: 'Golos Text';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header__btn--black {
+  margin-right: 16px;
+}
+
+.header__btn--black:hover {
+  background: rgb(251, 206, 81);
+  color: rgb(31, 31, 31);
+}
+
+.header__btn--inherit {
+  background-color: inherit;
+  border: 2px solid rgb(31, 31, 31);
+  color: rgb(31, 31, 31);
+}
+
+.header__btn--inherit:hover {
+  background: rgb(31, 31, 31);
+  color: rgb(255, 255, 255);
+}
+
+@media (min-width: 1920px) {
+  .header {
+    padding-left: 348.5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    min-height: 812px;
+    background: url(../img/header-bg-mobile.png) 75% / cover no-repeat;
+    padding: 18px 20px 0;
+  }
+
+  .header__logo {
+    width: 213px;
+    height: 32px;
+    margin-bottom: 40px;
+  }
+
+  .header__title {
+    max-width: 335px;
+    color: rgb(49, 49, 49);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    text-align: left;
+  }
+
+  .header__capital {
+    margin-left: 63.25px;
+  }
+  
+  .header__ball {
+    margin-left: 29px;
+  }
+
+  .header__text {
+    max-width: 542px;
+    text-align: left;
+    font-family: 'Golos Text', sans-serif;
+    color: rgb(49, 49, 49);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 32px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+  
+}
+
 
 
