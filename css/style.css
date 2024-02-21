@@ -30,12 +30,22 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Golos Text';
+  src: local('Golos Text'),
+      url('../fonts/GolosText-DemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
 body {
   font-family: 'Merriweather', serif;
+  width: 100%;
 }
 
 .container {
-  padding: 0 77px;
+  width: 1222px;
+  margin: 0 auto;
 }
 
 .header {
@@ -164,6 +174,8 @@ body {
 
 .support {
   min-height: 366px;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 
 .support__blocks {
@@ -194,8 +206,6 @@ body {
 .support__img {
   width: 394px;
   height: 250px;
-  background-image: url(../img/players.png);
-  background-repeat: no-repeat;
 }
 
 .support__line {
@@ -204,7 +214,7 @@ body {
   background-color: rgb(208, 208, 208);
 }
 
-.mobile {
+.support-mobile {
   display: none;
 }
 
@@ -212,14 +222,18 @@ body {
   min-height: 755px;
   padding-top: 28px;
   padding-bottom: 200px;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 
 .tournament__wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .tournament__img {
   width: 474px;
+  height: 527px;
   margin-right: 44px;
   position: relative;
 }
@@ -244,6 +258,131 @@ body {
   top: 90px;
 }
 
+.tournament__star2 {
+  position: absolute;
+  bottom: 10px;
+  z-index: 6;
+  left: -10px;
+}
+
+.tournament__horse {
+  position: absolute;
+  z-index: 7;
+  bottom: 0;
+  left: 70px;
+}
+
+.tournament__arm {
+  position: absolute;
+  z-index: 7;
+  bottom: -95px;
+  right: -10px;
+}
+
+.tournament__walk {
+  position: absolute;
+  z-index: -2;
+  top: 40px;
+  left: 35px;
+}
+
+.tournament__title {
+  max-width: 704px;
+  margin-bottom: 60px;
+}
+
+.tournament__table {
+  width: 704px;
+  margin-bottom: 48px;
+}
+
+.tournament__row {
+  height: 56px;
+}
+
+.tournament__cell1 {
+  border: 2px solid rgb(208, 208, 208);
+  text-align: left;
+  vertical-align: middle;
+  color: rgb(49, 49, 49);
+  font-family: 'Golos Text';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  width: 306px;
+  opacity: 0.7;
+  border-left: none;
+}
+
+.tournament__cell2 {
+  border-right: none;
+  padding-left: 16px;
+  border: 2px solid rgb(208, 208, 208);
+  text-align: left;
+  vertical-align: middle;
+  color: rgb(49, 49, 49);
+  font-family: 'Golos Text';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  border-right: none;
+}
+
+.tournament__cell1--top {
+  border: none;
+  vertical-align: top;
+}
+
+.tournament__cell2--top {
+  border-top: none;
+  border-right: none;
+  vertical-align: top;
+}
+
+.tournament__cell1--middle1, .tournament__cell2--middle1 {
+  border-bottom: none;
+}
+
+.tournament__cell1--middle2, .tournament__cell2--middle2 {
+  border-top: none;
+}
+
+.tournament__cell1--bottom, .tournament__cell2--bottom {
+  border-bottom: none;
+  vertical-align: bottom;
+}
+
+.tournament__row--bottom, .tournament__row--top {
+  height: 40px;
+}
+
+.tournament__cross {
+  position: relative;
+}
+
+.tournament__cross::after {
+  content: "";
+  position: absolute;
+  width: 81px;
+  height: 2px;
+  background-color: rgb(245, 73, 50);
+  left: 0;
+  top: 12px;
+}
+
+.tournament__signature {
+  text-align: left;
+  vertical-align: bottom;
+  color: rgb(48, 87, 162);
+  font-family: 'Golos Text';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.tournament-mobile {
+  display: none;
+}
 
 
 
@@ -350,14 +489,14 @@ body {
     display: none;
   }
 
-  .mobile {
+  .support-mobile {
     display: block;
     min-height: 634px;
     padding-top: 48px;
     padding-bottom: 21px;
   }
 
-  .mobile__title1 {
+  .support-mobile__title1 {
     max-width: 335px;
     color: rgb(49, 49, 49);
     font-size: 28px;
@@ -368,15 +507,12 @@ body {
     margin-bottom: 24px;
   }
 
-  .mobile__img {
-    background-image: url(../img/players-mobile.png);
+  .support-mobile__img {
     height: 212.56px;
-    background-position: center;
-    background-repeat: no-repeat;
     margin-bottom: 24.44px;
   }
   
-  .mobile__title2 {
+  .support-mobile__title2 {
     max-width: 335px;
     color: rgb(49, 49, 49);
     font-size: 28px;
@@ -386,11 +522,73 @@ body {
     text-transform: uppercase;
   }
 
-  .mobile__idea {
+  .support-mobile__idea {
     font-weight: 700;
     color: rgb(245, 73, 50);
   }
-  
+
+  .tournament {
+    display: none;
+  }
+
+  .tournament-mobile {
+    display: block;
+  }
+
+  .tournament-mobile__player {
+    margin-top: -45px;
+  }
+
+  .tournament-mobile--title {
+    margin-top: -25px;
+    margin-bottom: 44px;
+  }
+
+  .tournament-mobile__service {
+    color: rgba(49, 49, 49);
+    font-family: 'Golos Text';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: left;
+    opacity: 0.7;
+    margin-bottom: 12px;
+  }
+
+  .tournament-mobile__price {
+    color: rgb(49, 49, 49);
+    font-family: 'Golos Text';
+    max-width: 335px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: left;
+    padding-bottom: 16px;
+    border-bottom: 2px solid rgb(208, 208, 208);
+    margin-bottom: 16px;
+  }
+
+  .tournament-mobile__service--together {
+    padding-bottom: 16px;
+    border-bottom: 2px solid rgb(208, 208, 208);
+    margin-bottom: 16px;
+  }
+
+  .tournament-mobile__cop {
+    display: inline;
+    color: rgb(49, 49, 49);
+    font-family: 'Golos Text';
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    left: 150px;
+    top: -56px;
+  }
+
+  .tournament-mobile__service--middle {
+    margin-top: -20px;
+  }
+
 }
 
 
