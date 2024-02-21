@@ -204,6 +204,31 @@ body {
   background-color: rgb(208, 208, 208);
 }
 
+.mobile {
+  display: none;
+}
+
+.tournament {
+  min-height: 755px;
+  padding-top: 28px;
+  padding-bottom: 200px;
+}
+
+.tournament__wrapper {
+  display: flex;
+}
+
+.tournament__img {
+  width: 474px;
+  margin-right: 44px;
+  position: relative;
+}
+
+.tournament__star1 {
+  position: absolute;
+  top: -28px;
+  left: -20px;
+}
 
 
 
@@ -308,41 +333,49 @@ body {
   }
 
   .support {
-    min-height: 620px;
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    min-height: 634px;
     padding-top: 48px;
-    padding-bottom: 34px;
+    padding-bottom: 21px;
   }
 
-  .support__text {
-    width: 335px;
-  }
-
-  .support__blocks {
-    padding-top: 0;
-    display: grid;
-    grid-template-rows: 152px 212.56px 152px;
-    row-gap: 24px;
-  }
-
-  .support__title {
+  .mobile__title1 {
     max-width: 335px;
+    color: rgb(49, 49, 49);
     font-size: 28px;
     font-weight: 400;
+    line-height: 135%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 24px;
   }
 
-  .support__idea {
-    color: rgb(245, 73, 50);
-    font-weight: 700;
-  }
-
-  .support__img {
+  .mobile__img {
     background-image: url(../img/players-mobile.png);
-    background-position: 50% 50%;
+    height: 212.56px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 24.44px;
+  }
+  
+  .mobile__title2 {
+    max-width: 335px;
+    color: rgb(49, 49, 49);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 135%;
+    text-align: left;
+    text-transform: uppercase;
   }
 
-  .support__line {
-    display: none;
-  } 
+  .mobile__idea {
+    font-weight: 700;
+    color: rgb(245, 73, 50);
+  }
   
 }
 
