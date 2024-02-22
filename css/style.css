@@ -805,46 +805,134 @@ body {
     position: relative;
     width: 335px;
     height: 182px;
+    z-index: 2;
+    bottom: -35px;
   }
 
   .stages-mobile__cards {
     margin-bottom: 28px;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
   }
 
   .stages-mobile__card {
-    padding: 62px 0 34px 20px; 
-    color: #313131;
-  }
-
-  /* .stages__card {
+    color: rgb(49, 49, 49);
+    padding: 62px 20px 34px 72px;
     font-family: 'Golos Text';
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 120%;
     text-align: left;
-    background-color: #D9D9D9;
+    background-color: rgb(217, 217, 217);
     position: relative;
+    margin-right: 20px;
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    height: 200px;
   }
-  
-  .stages__text {
-    max-width: 302px;
+
+  .stages-mobile__card.active {
+    display: block;
   }
-  
-  .stages__text::before {
+
+  .stages-mobile__text {
+    margin-bottom: 28px;
+    max-width: 243px;
+    text-align: left;
+  }
+
+  .stages-mobile__text:last-child {
+    margin-bottom: 0;
+  }
+
+  .stages-mobile__text::before {
     position: absolute;
     content: "1";
     border-radius: 50%;
     background: rgb(255, 255, 255);
     width: 36px;
     height: 36px;
-    left: 20px;
-    right: 338px;
-    top: 20px;
-    bottom: 56px;
     display: flex;
     justify-content: center;
     align-items: center;
-  } */
+    color: rgb(49, 49, 49);
+    font-family: 'Golos Text';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+    left: 20px;
+  }
+
+  .stages-mobile__text--2::before{
+    content: "2";
+  }
+
+  .stages-mobile__text--3::before{
+    content: "3";
+  }
+
+  .stages-mobile__text--4::before{
+    content: "4";
+  }
+
+  .stages-mobile__text--5::before{
+    content: "5";
+  }
+
+  .stages-mobile__text--6::before{
+    content: "6";
+  }
+
+  .stages-mobile__text--7::before{
+    content: "7";
+  }
+
+  .stages-mobile__buttons {
+    width: 178px;
+    height: 36px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #prevBtn, #nextBtn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    background-color:  rgb(49, 49, 49);
+  }
+
+  #prevBtn:hover, #nextBtn:hover {
+    background-color: rgb(251, 206, 81);
+  }
+
+  .stages-mobile__circles {
+    width: 74px;
+    height: 10px;
+    display: flex;
+  }
+
+  .stages-mobile__circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+  }
+
+  .stages-mobile__circle.active {
+    background-color: #313131;
+  }
+
+  .stages-mobile__circle:not(:last-child) {
+    margin-right: 6px;
+  }
 
 }
 
