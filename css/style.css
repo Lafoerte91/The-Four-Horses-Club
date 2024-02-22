@@ -801,6 +801,51 @@ body {
     margin-bottom: 20px;
   }
 
+  .stages-mobile__aeroplan {
+    position: relative;
+    width: 335px;
+    height: 182px;
+  }
+
+  .stages-mobile__cards {
+    margin-bottom: 28px;
+  }
+
+  .stages-mobile__card {
+    padding: 62px 0 34px 20px; 
+    color: #313131;
+  }
+
+  /* .stages__card {
+    font-family: 'Golos Text';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: left;
+    background-color: #D9D9D9;
+    position: relative;
+  }
+  
+  .stages__text {
+    max-width: 302px;
+  }
+  
+  .stages__text::before {
+    position: absolute;
+    content: "1";
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    width: 36px;
+    height: 36px;
+    left: 20px;
+    right: 338px;
+    top: 20px;
+    bottom: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
 }
 
 
