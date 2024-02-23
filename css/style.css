@@ -535,6 +535,145 @@ body {
   display: none;
 }
 
+.participants {
+  padding-bottom: 140px;
+}
+
+.participants__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.participants__buttons {
+  padding-top: 10px;
+  width: 151px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#leftBtn, #rightBtn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: rgb(49, 49, 49);
+}
+
+.participants__arrow {
+  width: 16.92px;
+  height: 8.46px;
+}
+
+.participants__counts {
+  width: 35px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  opacity: 0.6;
+  color: rgb(49, 49, 49);
+  font-family: 'Golos Text';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.participants__left.active,  .participants__right.active {
+  opacity: 1;
+}
+
+.participants__list {
+  display: flex;
+}
+
+.participants__item {
+  width: 394px;
+  height: 462px;
+  margin-right: 20px;
+  padding: 0 37px;
+}
+
+.participants__avatar {
+  width: 320px;
+  height: 320px;
+  margin-bottom: 28px;
+}
+
+.participants__biography {
+  width: 320px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.participants__player {
+  color: rgb(49, 49, 49);
+  font-family: 'Golos Text';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 6px;
+}
+
+.participants__champion {
+  color: rgb(49, 49, 49);
+  font-family: 'Golos Text';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+.participants__details {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 113px;
+  height: 35px;
+  border: 1px solid rgb(48, 87, 162);
+  border-radius: 62px;
+  text-decoration: none;
+  color: rgb(48, 87, 162);
+  font-family: 'Golos Text';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.participants__title-mobile {
+  display: none;
+}
+
+.participants__buttons-mobile {
+  display: none;
+}
+
+.footer {
+  padding: 40px 0 72px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer__text {
+  opacity: 0.6;
+  color: rgb(49, 49, 49);
+  font-family: 'Golos Text';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: left;
+}
+
+
+
 
 
 
@@ -933,6 +1072,68 @@ body {
   .stages-mobile__circle:not(:last-child) {
     margin-right: 6px;
   }
+
+  .participants {
+    padding-bottom: 100px;
+  }
+
+  .participants__wrapper {
+    display: none;
+  }
+
+  .participants__title-mobile {
+    display: block;
+    font-size: 36px;
+    line-height: 110%;
+  }
+
+  .participants__buttons-mobile {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    align-items: center;
+  }
+
+  .participants__buttons {
+    width: 129px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #leftBtn, #rightBtn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .participants__arrow {
+    width: 13.85px;
+    height: 6.92px;
+  }
+
+  .participants__counts {
+    width: 29px;
+    height: 11px;
+  }
+
+  .participants__item {
+    width: 335px;
+    height: 388px;
+  }
+
+  .participants__avatar {
+    width: 244px;
+    height: 244px;
+  }
+
+  .participants__biography {
+    width: 286px;
+  }
+
+  .participants__player {
+    margin-bottom: 8px;
+  }
+
 
 }
 
