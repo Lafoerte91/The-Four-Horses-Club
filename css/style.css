@@ -41,6 +41,7 @@
 body {
   font-family: 'Merriweather', serif;
   width: 100%;
+  margin: 0;
 }
 
 .container {
