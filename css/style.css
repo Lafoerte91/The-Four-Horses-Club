@@ -694,6 +694,9 @@ body {
     width: 336px;
   }
 
+  body {
+    overflow: hidden;
+  }
   .header {
     min-height: 812px;
     background: url(../img/header-bg-mobile.png) 75% / cover no-repeat;
