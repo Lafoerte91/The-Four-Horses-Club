@@ -38,6 +38,10 @@
   font-style: normal;
 }
 
+html {
+  width: 100%;
+}
+
 body {
   font-family: 'Merriweather', serif;
   width: 100%;
